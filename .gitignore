@@ -36,3 +36,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 *.d.ts
+
+# secrets and scripts with credentials
+scripts/.vps-pass
+scripts/*.py
+**/.vps-pass
+package-lock.json

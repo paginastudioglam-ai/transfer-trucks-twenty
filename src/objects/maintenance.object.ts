@@ -1,0 +1,85 @@
+import { defineObject, FieldType } from 'twenty-sdk/define';
+
+export const MAINTENANCE_UNIVERSAL_IDENTIFIER = '44ad1601-d0de-412a-9a55-a72ca1bf89ae';
+
+export default defineObject({
+  universalIdentifier: MAINTENANCE_UNIVERSAL_IDENTIFIER,
+  nameSingular: 'maintenanceRecord',
+  namePlural: 'maintenanceRecords',
+  labelSingular: 'Maintenance Record',
+  labelPlural: 'Maintenance Records',
+  icon: 'IconWrench',
+  fields: [
+    {
+      universalIdentifier: 'fd7dd49d-f249-4fed-90f3-8035485a61ec',
+      name: 'serviceType',
+      type: FieldType.SELECT,
+      label: 'Type',
+      icon: 'IconCategory',
+      options: [
+        { value: 'OIL_CHANGE', label: 'Oil Change', position: 0, color: 'blue' },
+        { value: 'TIRES', label: 'Tires', position: 1, color: 'green' },
+        { value: 'BRAKES', label: 'Brakes', position: 2, color: 'red' },
+        { value: 'ENGINE', label: 'Engine', position: 3, color: 'orange' },
+        { value: 'BODY', label: 'Body', position: 4, color: 'gray' },
+        { value: 'INSPECTION', label: 'Inspection', position: 5, color: 'purple' },
+        { value: 'OTHER', label: 'Other', position: 6, color: 'gray' },
+      ],
+    },
+    {
+      universalIdentifier: 'ac497ec3-5845-4192-be85-723d95fef50b',
+      name: 'date',
+      type: FieldType.DATE_TIME,
+      label: 'Date',
+      icon: 'IconCalendar',
+    },
+    {
+      universalIdentifier: '99f6d837-0002-4a77-a8f5-0288b9ffff40',
+      name: 'mileage',
+      type: FieldType.NUMBER,
+      label: 'Mileage',
+      icon: 'IconGauge',
+      isNullable: true,
+    },
+    {
+      universalIdentifier: '8cd1c4ee-d9b3-466b-ad04-996d5104d14b',
+      name: 'vendor',
+      type: FieldType.TEXT,
+      label: 'Vendor',
+      icon: 'IconBuilding',
+      isNullable: true,
+    },
+    {
+      universalIdentifier: '32cc8864-78f3-4beb-8f6e-4da9e9cfd5f4',
+      name: 'cost',
+      type: FieldType.CURRENCY,
+      label: 'Cost',
+      icon: 'IconMoneybag',
+      isNullable: true,
+    },
+    {
+      universalIdentifier: '4784aab0-cea3-4816-afa1-52ec7b839529',
+      name: 'nextDueDate',
+      type: FieldType.DATE_TIME,
+      label: 'Next Due Date',
+      icon: 'IconCalendarEvent',
+      isNullable: true,
+    },
+    {
+      universalIdentifier: 'b4a55325-a312-4b61-af30-9d51ec508465',
+      name: 'nextDueMileage',
+      type: FieldType.NUMBER,
+      label: 'Next Due Mileage',
+      icon: 'IconGauge',
+      isNullable: true,
+    },
+    {
+      universalIdentifier: '6e91178f-7e15-40ba-b87a-99eb81188916',
+      name: 'notes',
+      type: FieldType.TEXT,
+      label: 'Notes',
+      icon: 'IconNotes',
+      isNullable: true,
+    },
+  ],
+});
