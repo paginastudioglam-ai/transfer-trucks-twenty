@@ -11,6 +11,14 @@ export default defineObject({
   icon: 'IconCash',
   fields: [
     {
+      universalIdentifier: '85247978-550e-4271-bdec-95d77b43e6a0',
+      name: 'rentalId',
+      type: FieldType.TEXT,
+      label: 'Rental ID',
+      icon: 'IconFileText',
+      isNullable: true,
+    },
+    {
       universalIdentifier: 'ea1d02c0-f173-4afb-a90e-f94fac213380',
       name: 'weekNumber',
       type: FieldType.NUMBER,

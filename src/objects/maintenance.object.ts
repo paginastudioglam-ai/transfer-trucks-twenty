@@ -11,6 +11,14 @@ export default defineObject({
   icon: 'IconWrench',
   fields: [
     {
+      universalIdentifier: '260ed666-2429-450c-a7c8-321a9a14fa0c',
+      name: 'truckId',
+      type: FieldType.TEXT,
+      label: 'Truck ID',
+      icon: 'IconTruck',
+      isNullable: true,
+    },
+    {
       universalIdentifier: 'fd7dd49d-f249-4fed-90f3-8035485a61ec',
       name: 'serviceType',
       type: FieldType.SELECT,

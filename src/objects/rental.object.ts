@@ -11,6 +11,22 @@ export default defineObject({
   icon: 'IconFileText',
   fields: [
     {
+      universalIdentifier: '5b6a411c-ef3e-43b2-a0d7-13abc9d77722',
+      name: 'truckId',
+      type: FieldType.TEXT,
+      label: 'Truck ID',
+      icon: 'IconTruck',
+      isNullable: true,
+    },
+    {
+      universalIdentifier: '5bee5ad6-b190-49bf-b0fd-fc54ccbf827f',
+      name: 'driverId',
+      type: FieldType.TEXT,
+      label: 'Driver ID',
+      icon: 'IconUser',
+      isNullable: true,
+    },
+    {
       universalIdentifier: 'a7c6336a-95e8-4ff2-bfaa-bfb99a94c8df',
       name: 'contractNumber',
       type: FieldType.TEXT,
